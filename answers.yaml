@@ -2,12 +2,14 @@ homework_1:
   - id: 1
     answer: "19"
     description: ""
+    output: "Q1: Downloading the data. Columns: 19"
   - id: 2
     answer: "42.59"
     description: ""
+    output: "Q2: computing duration. Standard deviation: 0 days 00:42:35.661074"
   - id: 3
     answer: "98%"
-    description: "0.9812202822125979"
+    output: "Q3: Dropping outliers. fraction left after filter: 98% - actaul value: 0.9812202822125979"
   - id: 4
-    answer: "155"
-    description: "actually got 158"
+    answer: "515"
+    output: "Q4: One-hot encoding. Feature matrix shape: (3066766, 518) - columns: 518 rows: 3066766"
