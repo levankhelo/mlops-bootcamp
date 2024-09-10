@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/levankhelo/Coding/mlops-bootcamp/homework-2/mlruns/0/09472b23cec14d4cab6ee6e9b68da1ed/artifacts
+end_time: 1726009019313
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 09472b23cec14d4cab6ee6e9b68da1ed
+run_name: bustling-lamb-317
+run_uuid: 09472b23cec14d4cab6ee6e9b68da1ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726009007914
+status: 3
+tags: []
+user_id: levankhelo

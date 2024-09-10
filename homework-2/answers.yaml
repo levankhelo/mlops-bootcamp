@@ -1,10 +1,22 @@
 homework_2:
   - id: 1
-    answer: "2.12.2"
-    output: "Q1. Install MLflow: mlflow, version 2.12.2"
+    answer: "2.16.0"
+    details: "had 2.12.2 but had to update to 2.16.2 to run backend server for mlflow on Q4"
+    output: ""
   - id: 2
     answer: "4"
-    output: "Q2. Download and preprocess the data: 4 files were saved"
+    output: ""
   - id: 3
-    answer: ""
-    output: "Q3. Train a model with autolog"
+    answer: "2"
+    output: "Q3. Train a model with autolog: min_samples_split: 2, RMSE: 5.431160019389339"
+  - id: 4
+    answer: "default-artifact-root"
+    output: ""
+  - id: 5
+    answer: "5.335"
+    details: "had to install hyperopt. best of 15 trials, best RMSE was 5.335"
+    output: ""
+  - id: 6
+    answer: "5.567"
+    details: ""
+    output: "Q6. Promote the best model to the model registry"
