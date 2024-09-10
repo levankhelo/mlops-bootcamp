@@ -1,0 +1,10 @@
+homework_2:
+  - id: 1
+    answer: "2.12.2"
+    output: "Q1. Install MLflow: mlflow, version 2.12.2"
+  - id: 2
+    answer: "4"
+    output: "Q2. Download and preprocess the data: 4 files were saved"
+  - id: 3
+    answer: ""
+    output: "Q3. Train a model with autolog"
