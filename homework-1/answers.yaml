@@ -13,3 +13,9 @@ homework_1:
   - id: 4
     answer: "515"
     output: "Q4: One-hot encoding. Feature matrix shape: (3066766, 518) - columns: 518 rows: 3066766"
+  - id: 5
+    answer: "7.64"
+    output: "Q5. Training a model. RMSE on training data: 7.649261929201487"
+  - id: 6
+    answer: "7.81"
+    output: "Q6. Evaluating the model. RMSE on validation data: 7.811819793542861"
