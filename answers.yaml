@@ -1,4 +1,13 @@
 homework_1:
-  1: "19"
-  2: "42.59"
-  3: "98%"
+  - id: 1
+    answer: "19"
+    description: ""
+  - id: 2
+    answer: "42.59"
+    description: ""
+  - id: 3
+    answer: "98%"
+    description: "0.9812202822125979"
+  - id: 4
+    answer: "155"
+    description: "actually got 158"
