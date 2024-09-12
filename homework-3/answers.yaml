@@ -1,0 +1,21 @@
+homework_3:
+  - id: 1
+    answer: "v0.9.73"
+    output: ""
+  - id: 2
+    answer: "55"
+    description: ""
+    output: ""
+  - id: 3
+    answer: "3403766"
+    output: ""
+  - id: 4
+    answer: "3316216"
+    output: ""
+  - id: 5
+    answer: "24.77"
+    output: ""
+  - id: 6
+    answer: "4,534"
+
+    output: "model_size_bytes: 4500"
