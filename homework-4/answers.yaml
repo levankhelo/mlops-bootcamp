@@ -14,8 +14,8 @@ homework_1:
     answer: "sha256:1d0b25d9c651fd050555aadd57431b53d4cf664e749069da77f3d52c5ad14b3b"
     output: "Q4. Virtual environment"
   - id: 5
-    answer: ""
-    output: "Q5. Parametrize the script"
+    answer: "14.29"
+    output: "Q5. Parametrize the script. Mean predicted duration: 14.08 minutes"
   - id: 6
     answer: ""
     output: "Q6. Docker container"
