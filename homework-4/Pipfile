@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+scikit-image = "==0.23.2"
+scikit-learn = "==1.4.2"
+pandas = "==2.2.2"
+pyarrow = "==14.0.2"
+arrow = "==1.2.3"
+numpy = "==1.26.4"
+numpydoc = "==1.7.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
