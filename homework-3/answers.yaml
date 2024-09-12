@@ -17,5 +17,4 @@ homework_3:
     output: ""
   - id: 6
     answer: "4,534"
-
     output: "model_size_bytes: 4500"
