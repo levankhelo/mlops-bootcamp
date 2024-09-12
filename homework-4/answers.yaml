@@ -4,11 +4,11 @@ homework_1:
     description: ""
     output: "Q1. Notebook. standard deviation: 6.249106352794334"
   - id: 2
-    answer: ""
+    answer: "66M"
     description: ""
-    output: "Q2. Preparing the output"
+    output: "Q2: preparing the output. file size: 68.93 MB"
   - id: 3
-    answer: ""
+    answer: "jupyter nbconvert --to script starter.ipynb"
     output: "Q3. Creating the scoring script"
   - id: 4
     answer: ""
