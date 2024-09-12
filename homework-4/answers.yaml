@@ -17,5 +17,6 @@ homework_1:
     answer: "14.29"
     output: "Q5. Parametrize the script. Mean predicted duration: 14.08 minutes"
   - id: 6
-    answer: ""
-    output: "Q6. Docker container"
+    answer: "0.19"
+    description: "on ARM image composed by me, with model.bin only, i got 14.08 minutes but on amd64/x64 architecture i got 0.18 minutes..."
+    output: "Q6. Docker container. Mean predicted duration: 0.18 minutes"
