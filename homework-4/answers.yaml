@@ -1,0 +1,21 @@
+homework_1:
+  - id: 1
+    answer: "6.24"
+    description: ""
+    output: "Q1. Notebook. standard deviation: 6.249106352794334"
+  - id: 2
+    answer: "66M"
+    description: ""
+    output: "Q2: preparing the output. file size: 68.93 MB"
+  - id: 3
+    answer: "jupyter nbconvert --to script starter.ipynb"
+    output: "Q3. Creating the scoring script"
+  - id: 4
+    answer: ""
+    output: "Q4. Virtual environment"
+  - id: 5
+    answer: ""
+    output: "Q5. Parametrize the script"
+  - id: 6
+    answer: ""
+    output: "Q6. Docker container"
