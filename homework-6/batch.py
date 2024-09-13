@@ -24,13 +24,56 @@ def get_s3_options():
     return None
 
 def read_data(filename):
-    storage_options = get_s3_options()
-    df = pd.read_parquet(filename, storage_options=storage_options)
+    """
+    Read data from a parquet file, either from local filesystem or S3.
+
+    Args:
+        filename (str): The path to the parquet file.
+
+    Returns:
+        pd.DataFrame: Raw data.
+    """
+    if filename.startswith('s3://'):
+        # Check if S3_ENDPOINT_URL is set
+        s3_endpoint_url = os.getenv('S3_ENDPOINT_URL')
+        if s3_endpoint_url:
+            # Configure storage options to point to Localstack
+            options = {
+                'client_kwargs': {
+                    'endpoint_url': s3_endpoint_url
+                }
+            }
+            df = pd.read_parquet(filename, storage_options=options)
+        else:
+            # Read from actual S3 service
+            df = pd.read_parquet(filename)
+    else:
+        # Read from local filesystem or HTTP URL
+        df = pd.read_parquet(filename)
     return df
 
 def save_data(df, output_file):
-    storage_options = get_s3_options()
-    df.to_parquet(output_file, engine='pyarrow', index=False, storage_options=storage_options)
+    """
+    Save DataFrame to a Parquet file, either to local filesystem or S3.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to save.
+        output_file (str): The destination file path.
+    """
+    if output_file.startswith('s3://'):
+        s3_endpoint_url = os.getenv('S3_ENDPOINT_URL')
+        if s3_endpoint_url:
+            options = {
+                'client_kwargs': {
+                    'endpoint_url': s3_endpoint_url
+                }
+            }
+            df.to_parquet(output_file, engine='pyarrow', index=False, storage_options=options)
+        else:
+            df.to_parquet(output_file, engine='pyarrow', index=False)
+    else:
+        df.to_parquet(output_file, engine='pyarrow', index=False)
+
 
 def prepare_data(df, categorical):
     df['duration'] = df.tpep_dropoff_datetime - df.tpep_pickup_datetime
