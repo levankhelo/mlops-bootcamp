@@ -16,7 +16,11 @@ homework_6:
     output: ""
   - id: 4
     answer: "--endpoint-url"
-    output: ""
+    output: |
+      '''
+      aws s3 mb s3://nyc-duration --endpoint-url=http://localhost:4566;
+      make_bucket: nyc-duration
+      '''
   - id: 5
     answer: "3620"
     output: ""
