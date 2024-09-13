@@ -1,20 +1,25 @@
 homework_6:
   - id: 1
-    answer: ""
-    output: ""
+    answer: 'if __name__ == "__main__"'
+    output: |
+      '''
+      if __name__ == "__main__":
+          year = int(sys.argv[1])
+          month = int(sys.argv[2])
+          main(year, month)
+      '''
   - id: 2
-    answer: ""
-    description: ""
-    output: ""
+    answer: "__init__.py"
+    output: "tests/__init__.py"
   - id: 3
-    answer: ""
+    answer: "2"
     output: ""
   - id: 4
-    answer: ""
+    answer: "--endpoint-url"
     output: ""
   - id: 5
-    answer: ""
+    answer: "3620"
     output: ""
   - id: 6
-    answer: ""
+    answer: "36.28"
     output: ""
