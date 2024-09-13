@@ -11,6 +11,18 @@ else
   exit 1
 fi
 
+# Start Localstack using Docker Compose
+echo "Starting Localstack..."
+docker-compose up -d
+
+# Wait until Localstack is ready
+echo "Waiting for Localstack to be ready..."
+until curl -s "$S3_ENDPOINT_URL/health" | grep "\"s3\": \"running\"" > /dev/null; do
+  sleep 5
+  echo "Waiting for Localstack S3 service to be ready..."
+done
+echo "Localstack is ready."
+
 # Create the S3 bucket in Localstack if it doesn't exist
 aws --endpoint-url="$S3_ENDPOINT_URL" s3 mb s3://nyc-duration || true
 
