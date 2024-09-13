@@ -1,21 +1,14 @@
 homework_4:
   - id: 1
     answer: "57457"
-    output: "Q1. Prepare the dataset"
+    output: "Q1. Prepare the dataset. shape: (54135, 21)"
   - id: 2
-    answer: ""
+    answer: "ColumnQuantileMetric"
     description: ""
     output: ""
   - id: 3
-    answer: ""
-    output: ""
+    answer: "14.2"
+    output: "The median (quantile = 0.5) for fare_amount in March 2024 is: 13.5"
   - id: 4
-    answer: ""
-    output: ""
-  - id: 5
-    answer: ""
-    output: ""
-  - id: 6
-    answer: ""
-    description: ""
+    answer: "project_folder/dashboards (05-monitoring/dashboards)"
     output: ""
