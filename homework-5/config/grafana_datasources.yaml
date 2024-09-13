@@ -10,8 +10,10 @@ datasources:
     url: db:5432
     database: test
     user: postgres
+    password: admin
     secureJsonData:
-      password: 'example'
+      username: admin
+      password: 'admin'
     jsonData:
       sslmode: 'disable'
       database: test
