@@ -26,4 +26,4 @@ homework_6:
     output: "2024-09-13 05:57:26       3620 in/2023-01.parquet"
   - id: 6
     answer: "36.28"
-    output: ""
+    output: "Total predicted duration: 36.27725045203073"
