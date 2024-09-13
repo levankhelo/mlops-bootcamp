@@ -63,16 +63,35 @@ def save_data(df, output_file):
     if output_file.startswith('s3://'):
         s3_endpoint_url = os.getenv('S3_ENDPOINT_URL')
         if s3_endpoint_url:
+            # Configure storage options to point to Localstack
             options = {
                 'client_kwargs': {
                     'endpoint_url': s3_endpoint_url
                 }
             }
-            df.to_parquet(output_file, engine='pyarrow', index=False, storage_options=options)
+            df.to_parquet(
+                output_file,
+                engine='pyarrow',
+                compression=None,
+                index=False,
+                storage_options=options
+            )
         else:
-            df.to_parquet(output_file, engine='pyarrow', index=False)
+            # Save to actual S3
+            df.to_parquet(
+                output_file,
+                engine='pyarrow',
+                compression=None,
+                index=False
+            )
     else:
-        df.to_parquet(output_file, engine='pyarrow', index=False)
+        # Save to local filesystem
+        df.to_parquet(
+            output_file,
+            engine='pyarrow',
+            compression=None,
+            index=False
+        )
 
 
 def prepare_data(df, categorical):
@@ -114,7 +133,7 @@ def main(year, month):
     df_result['ride_id'] = df['ride_id']
     df_result['predicted_duration'] = y_pred
 
-    # Save the data
+    # Save the data using save_data
     save_data(df_result, output_file)
 
 if __name__ == "__main__":

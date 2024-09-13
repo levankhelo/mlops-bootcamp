@@ -23,7 +23,7 @@ homework_6:
       '''
   - id: 5
     answer: "3620"
-    output: ""
+    output: "2024-09-13 05:57:26       3620 in/2023-01.parquet"
   - id: 6
     answer: "36.28"
     output: ""
